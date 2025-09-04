@@ -1,2 +1,1 @@
-# supro
-Social Media Platform
+https://supro.com.tr
