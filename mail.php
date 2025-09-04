@@ -13,8 +13,8 @@ try {
     // Sunucu ayarları
     $mail->isSMTP();
     $mail->CharSet = 'UTF-8';
-    $mail->SMTPDebug = 2; // Hata ayıklama için aç
-    $mail->Host       = 'mail.supro.com.tr'; // SMTP
+    $mail->SMTPDebug = 2; 
+    $mail->Host       = ''; 
     $mail->SMTPAuth   = true;$mail->SMTPOptions = array(
     'ssl' => array(
         'verify_peer' => false,
@@ -22,10 +22,10 @@ try {
         'allow_self_signed' => true
     )
 );
-    $mail->Username   = 'merhaba@supro.com.tr'; // Kendi mail adresin
-    $mail->Password   = '077b9029-1e5';
+    $mail->Username   = '';
+    $mail->Password   = '';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-    $mail->Port       = 465; // 465 için SMTPS, 587 için STARTTLS olmalı
+    $mail->Port       = 465;
 
     // Gönderen ve alan kişi bilgileri
     $mail->setFrom('merhaba@supro.com.tr', "Supro");
